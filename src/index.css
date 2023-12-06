@@ -1,0 +1,219 @@
+.main_head {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.main_head span {
+    color: var(--shade2);
+    font-weight: 600;
+}
+
+@media screen and (max-width:799px) {
+    .main_head {
+        font-size: 2rem;
+    }
+}
+
+.border-bottom1 {
+    border-bottom: 5px solid var(--shade2);
+}
+
+.h-100vh {
+    min-height: 100vh !important;
+}
+
+
+/* BG SVG */
+
+.bg1 {
+    background-size: cover !important;
+    background-image: url("./assets/bg.svg") !important;
+}
+
+.bg2 {
+    background-size: cover !important;
+    background-image: url("./assets/bg1.svg") !important;
+}
+
+.bg3 {
+    background-size: cover !important;
+    background-image: url("./assets/bg2.svg") !important;
+}
+
+.bg4 {
+    background-size: cover !important;
+    background-image: url("./assets/bg3.svg") !important;
+}
+
+.bg5 {
+    background-size: cover !important;
+    background-image: url("./assets/bg4.svg") !important;
+}
+
+
+/* Micro Interactions */
+
+.hover-scale-up,
+.hover-scale-down {
+    transition: .1s ease all !important;
+    cursor: pointer;
+}
+
+.hover-scale-up:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.hover-scale-down:hover {
+    transform: scale(0.95);
+}
+
+
+/* Footer Links */
+
+.underline-hover {
+    position: relative !important;
+    transition: 0.3s ease all;
+}
+
+.underline-hover::after {
+    content: "";
+    position: absolute !important;
+    left: 0;
+    bottom: -10%;
+    width: 0%;
+    height: 2px;
+    background-color: var(--shade2);
+    transition: 0.3s ease all;
+}
+
+.underline-hover:hover::after {
+    width: 70%;
+}
+
+.underline-hover:hover {
+    color: var(--shade2) !important;
+}
+
+.underline {
+    position: relative !important;
+    cursor: pointer;
+}
+
+.underline::after {
+    content: "";
+    position: absolute !important;
+    left: 1%;
+    bottom: -30%;
+    width: 20%;
+    height: 2px;
+    background-color: var(--shade2);
+    transition: 0.3s ease all;
+}
+
+.underline:hover::after {
+    width: 30%;
+}
+
+@media screen and (max-width:799px) {
+    .underline::after {
+        left: 40%;
+    }
+    .underline:hover::after {
+        width: 20%;
+    }
+}
+
+
+/* Animations */
+
+.fade-in-custom {
+    animation: fade-in-my .4s linear !important;
+}
+
+@keyframes fade-in-my {
+    from {
+        opacity: 0;
+        transform: scale(0.4);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Google Lang Select */
+
+.goog-te-combo {
+    border: none !important;
+    outline: none !important;
+    padding: 10px !important;
+    background-color: var(--dark) !important;
+    color: var(--light);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+/* .goog-te-gadget img {
+    display: none !important;
+} */
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+.goog-gt-tt {
+    display: none !important;
+}
+
+#goog-gt-tt {
+    display: none !important;
+}
+
+.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q {
+    background-color: none !important;
+}
+
+
+/* Hide the "Achievements" element */
+
+.goog-te-gadget-icon {
+    display: none !important;
+}
+
+
+/* Hide the "Rate this translation" element */
+
+.goog-te-gadget-utility {
+    display: none !important;
+}
+
+body>.skiptranslate {
+    display: none;
+}
+
+body {
+    top: 0px !important;
+}
+
+.show_custom {
+    transition: 1s ease linear !important;
+    animation: show_hide 0.4s linear 0s 1 both !important;
+    visibility: hidden;
+}
+
+@keyframes show_hide {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}

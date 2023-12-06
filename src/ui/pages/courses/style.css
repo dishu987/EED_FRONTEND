@@ -1,0 +1,15 @@
+.course_card_head {
+    font-weight: 800 !important;
+    background-color: #00000043;
+    text-transform: uppercase;
+    border-bottom: 2px solid black !important;
+    border-left: 1px solid black !important;
+    border-right: 1px solid black !important;
+    border-top: 1px solid black !important;
+}
+
+.course_card_desc {
+    border-bottom: 5px solid black !important;
+    border-left: 1px solid black !important;
+    border-right: 1px solid black !important;
+}

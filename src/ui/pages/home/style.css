@@ -1,0 +1,66 @@
+.about_us {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--light);
+    border-top: 5px solid var(--shade2);
+    padding: 50px 0;
+}
+
+.about_us .main_head {
+    text-align: right;
+    padding: 0 10px;
+}
+
+.about_us .main_head span {
+    color: var(--shade2);
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.about_us .full {
+    height: 70%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.about_us .full p::first-letter {
+    font-weight: 800;
+}
+
+@media screen and (max-width:799px) {
+    .about_us {
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-size: contain;
+    }
+    .about_us .main_head {
+        text-align: center;
+        padding: 0 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    .about_us .main_head span {
+        color: var(--shade2);
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    .about_us .full {
+        height: fit-content;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .about_us .full p::first-letter {
+        font-size: 2rem;
+    }
+}
